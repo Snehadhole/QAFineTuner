@@ -12,10 +12,7 @@ To install the required Python packages, use the `requirements.txt` file provide
 ```bash
 pip install -r requirements.txt
 
-
-
-
-1. # Clone the Repository
+# Clone the Repository
 '''bash
 git clone https://github.com/Snehadhole/QAFineTuner.git
 cd QAFineTuner
