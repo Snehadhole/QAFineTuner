@@ -9,7 +9,7 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 
 # Installation
 ###Clone the Repository    
-```   
+```  
 git clone https://github.com/Snehadhole/QAFineTuner.git
 cd QAFineTuner
 ```
