@@ -8,5 +8,7 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 **Torch Compatibility**: The model is loaded with torch_dtype=torch.float32 to optimize performance during training.
 
 # Installation
-To run the code, you'll need to install the required Python packages. You can do this using pip.            '''bash    ('pip install -r requirements.txt')
+To install the required Python packages, use the `requirements.txt` file provided in the repository. Run the following command:
 
+```bash
+pip install -r requirements.txt
