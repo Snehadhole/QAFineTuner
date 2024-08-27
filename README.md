@@ -9,6 +9,5 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 
 # Installation
 To install the required Python packages, use the `requirements.txt` file provided in the repository. Run the following command:
-
 ```bash
 pip install -r requirements.txt
