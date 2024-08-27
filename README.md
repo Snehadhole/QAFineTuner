@@ -11,9 +11,17 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 ###Clone the Repository    
 ```  
 git clone https://github.com/Snehadhole/QAFineTuner.git
+```
+###Navigate to the Directory:
+```
 cd QAFineTuner
 ```
 
 To install the required Python packages, use the `requirements.txt` file provided in the repository. Run the following command:    
-```bash
+```
 pip install -r requirements.txt
+```
+###Run the Script
+```
+python qa_fine_tuner.py
+```
