@@ -8,7 +8,7 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 **Torch Compatibility**: The model is loaded with torch_dtype=torch.float32 to optimize performance during training.
 
 # Installation
-### Clone the Repository
+Clone the Repository
 
 '''bash
 
