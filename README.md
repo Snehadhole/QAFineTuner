@@ -8,11 +8,11 @@ This repository contains a Python script designed for fine-tuning a Large Langua
 **Torch Compatibility**: The model is loaded with torch_dtype=torch.float32 to optimize performance during training.
 
 # Installation
-To install the required Python packages, use the `requirements.txt` file provided in the repository. Run the following command:    
-```bash
-pip install -r requirements.txt
-
-# Clone the Repository
+### Clone the Repository
 '''bash
 git clone https://github.com/Snehadhole/QAFineTuner.git
 cd QAFineTuner
+
+To install the required Python packages, use the `requirements.txt` file provided in the repository. Run the following command:    
+```bash
+pip install -r requirements.txt
