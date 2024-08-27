@@ -1,3 +1,6 @@
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_name = "google/flan-t5-base")
+
 def tokenize_function(example):
     start_prompt = '\n\n'
     end_prompt = '\n\nAnswer: '
