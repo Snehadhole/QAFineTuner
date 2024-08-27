@@ -4,4 +4,5 @@
   "LR":1e-4,
   "BATCH_SIZE": 2 ,
   "training_path" : "./training_path_nvidia_chatbot" ,
+  "model_path":"./nvidia-chatbot-final-model"
 }
