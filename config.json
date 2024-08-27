@@ -1,0 +1,7 @@
+{
+  "model_name": "google/flan-t5-base",
+  "EPOCHS": 1,
+  "LR":1e-4,
+  "BATCH_SIZE": 2 ,
+  "training_path" : "./training_path_nvidia_chatbot" ,
+}
