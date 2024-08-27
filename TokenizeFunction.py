@@ -1,5 +1,10 @@
 from transformers import AutoTokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_name = "google/flan-t5-base")
+
+with open('config.json', 'r') as file:
+  config = json.load(file)
+
+model_name = config['model_name']
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 def tokenize_function(example):
     start_prompt = '\n\n'
