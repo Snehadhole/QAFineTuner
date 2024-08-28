@@ -2,7 +2,7 @@ from transformers import AutoTokenizer
 import json
 from ModelTokenizer import get_tokenizer
 
-tokenizer = get_tokenizer()
+tokenizer = get_tokenizer(model_name)
 
 def tokenize_function(example):
     start_prompt = '\n\n'
