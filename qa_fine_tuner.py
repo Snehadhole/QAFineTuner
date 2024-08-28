@@ -77,7 +77,7 @@ trainer= Trainer(
 
 trainer.train()
 
-model_path = config["model_path"]#"./nvidia-chatbot-final-model"
+model_path = config["train_model_path"]#"./nvidia-chatbot-final-model"
 
 trainer.model.save_pretrained(model_path)
 tokenizer.save_pretrained(model_path)
