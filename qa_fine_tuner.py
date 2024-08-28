@@ -17,7 +17,7 @@ with open('config.json', 'r') as file:
 
 # Load the dataset into a Pandas DataFrame, selecting only the 'question' and 'answer' columns
 data = pd.read_csv("NvidiaDocumentationQandApairs.csv")[["question", "answer"]]
-
+model_name = config['model_name']
 # Print the shape of the dataset and display the first few rows
 # print(data.shape)
 # print(data.head())
@@ -32,14 +32,8 @@ val=test.sample(frac=0.5,random_state=7) # Create validation of 50% of the testi
 test=test.drop(val.index) # Create testing by removing the 50% of the validation data which will result in 50%
 
 
-
-# model_name = config['model_name']
-# model = AutoModelForSeq2SeqLM.from_pretrained(model_name, torch_dtype=torch.float32)
-
-# model = get_model_tokenizer()
-
-model = get_model()
-tokenizer = get_tokenizer()
+model = get_model(model_name)
+tokenizer = get_tokenizer(model_name)
 
 train_data = Dataset.from_pandas(train)
 train_tokenized_datasets = train_data.map(tokenize_function, batched=True)
