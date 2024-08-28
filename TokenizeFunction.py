@@ -2,6 +2,11 @@ from transformers import AutoTokenizer
 import json
 from ModelTokenizer import get_tokenizer
 
+with open('config.json', 'r') as file:
+  config = json.load(file)
+
+model_name = config['model_name']
+
 tokenizer = get_tokenizer(model_name)
 
 def tokenize_function(example):
