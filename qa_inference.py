@@ -1,8 +1,9 @@
 from transformers import GenerationConfig
-from ModelTokenizer import get_model_tokenizer
+from ModelTokenizer import get_model,get_tokenizer
 
 def ModelInference(test_text,model_path) :
-    trained_model, tokenizer = get_model_tokenizer(model_path)
+    trained_model = get_model(model_path)
+    tokenizer = get_tokenizer(model_path)
 
     tokenized_test_text = tokenizer(test_text,
                                   return_tensors='pt')
